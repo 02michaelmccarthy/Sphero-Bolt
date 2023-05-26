@@ -1,7 +1,9 @@
 //Programmers: Michael McCarthy -Partner Patrick Condon
 //Date: 5.26.23
 //Program: Competition
-
+//Sphero Bolt Name is SB-183F
 async function startProgram(){
-//write code here	
+	await speak("Start", true);
+	await scrollMatrixText("Start", {r:0, g: 255, b: 0}, 6, true)
+	await delay(4)
 }
