@@ -9,11 +9,13 @@ async function startProgram(){
 	await roll(0,100, 1.5)
 	await delay(2)
 	setMainLed({r:0, g:0, b:255})
-	await roll(90, 100,1)
+	await roll(90, 100,1.15)
 	await delay(4)
 	await Sound.Animal.Monkey.play(true)
 	await delay(2)
 	await roll(180, 100, .7)
+	await delay(2)
+	await roll(220,100,.72)
 	await delay(2)
 	
 	
