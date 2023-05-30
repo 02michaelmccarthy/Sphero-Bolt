@@ -17,6 +17,8 @@ async function startProgram(){
 	await delay(2)
 	await roll(220,100,.72)
 	await delay(2)
+	await roll(135, 35,1)
+	
 	
 	
 }
