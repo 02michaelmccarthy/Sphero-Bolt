@@ -7,5 +7,8 @@ async function startProgram(){
 	await scrollMatrixText("Start", {r:0, g: 255, b: 0}, 6, true)
 	await delay(4)
 	await roll(0,100, 1.5)
+	await delay(2)
+	setMainLed({r:0, g:0, b:255})
+	
 	
 }
