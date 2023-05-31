@@ -3,23 +3,34 @@
 //Program: Competition
 //Sphero Bolt Name is SB-183F
 async function startProgram(){
+	//Make green text go across the screen saying "Start"
 	await speak("Start", true);
 	await scrollMatrixText("Start", {r:0, g: 255, b: 0}, 6, true)
 	await delay(4)
+	//The first roll
 	await roll(0,100, 1.5)
 	await delay(2)
+	//Chenge the LED color blue
 	setMainLed({r:0, g:0, b:255})
+	await delay(2)
+	//The second roll
 	await roll(90, 100,1.15)
 	await delay(4)
+	//First sound that needs to play
 	await Sound.Animal.Monkey.play(true)
 	await delay(2)
+	//Third roll
 	await roll(180, 100, .7)
 	await delay(2)
+	//fouth roll
 	await roll(220,100,.72)
 	await delay(2)
+	//5th roll that centers the bolt so we can tu
 	await roll(135, 35,1)
 	await delay(2)
+	//Make the LED color red
 	setMainLed({r:255, g:0, b:0})
+	
 	
 	
 	
